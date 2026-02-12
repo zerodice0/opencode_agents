@@ -22,3 +22,14 @@ ln -s /Users/geom-eungom/workspace/zerodice0/development/opencode_agents/skills 
 ```bash
 opencode agent list
 ```
+
+## Run subagents (non-interactive)
+
+Subagents such as `swift-engineer`, `kotlin-engineer`, and `flutter-engineer`
+should be invoked through the `/agent` slash command in `opencode run`.
+
+```bash
+opencode run "/agent swift-engineer Smoke test only: load swift-docs-latest and return a 3-item checklist."
+```
+
+Note: `opencode run --agent <name>` is for primary agents. For subagents, use `/agent <subagent-name> ...`.
